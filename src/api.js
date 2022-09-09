@@ -31,7 +31,7 @@ router.post('/testpost', (req, res) => {
 	});
 });
 
-app.use(`/api`, router);
+app.use(`/.netlify/functions/api`, router);
 
 const Dummy = require('./routes/dummy');
 
